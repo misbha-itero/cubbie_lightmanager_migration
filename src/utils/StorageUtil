@@ -1,0 +1,22 @@
+import { BRIDGE_NAME, IP_ADDRESS, USER_NAME, LIGHT_NAME } from '../contants';
+import { getData } from '../storage/LocalStorage';
+
+export const getIpAddress = () => {
+  const ipAddress = getData(IP_ADDRESS);
+  return ipAddress;
+};
+
+export const getDeviceType = () => {
+  const bridgeName = getData(BRIDGE_NAME);
+  return bridgeName;
+};
+
+export const getUserName = () => {
+  const userName = getData(USER_NAME);
+  return userName;
+};
+
+export const getLightName = () => {
+  const userName = getData(LIGHT_NAME);
+  return userName;
+};
